@@ -24,7 +24,7 @@ export default function Form() {
         <Card>
           <NumberInput value={havingGift} onChange={(newHavingGift) => {
             setHavingGift(newHavingGift)
-          }} text={"Quantidade de portas?"} />
+          }} text={"Porta com presente:"} />
         </Card>
         <Card bgColor='#28a085'>
           <Link href={`/game/${qtdPorts}/${havingGift > 0 ? havingGift : ''}`} passHref>

@@ -16,13 +16,15 @@
     "module": "esnext",
     "isolatedModules": true,
     "jsx": "preserve",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "resolveJsonModule": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/ Gift.jsx"  ],
+    "**/*.tsx",
+    "components/ Gift.jsx"
+  ],
   "exclude": [
     "node_modules"
   ]
