@@ -7,7 +7,6 @@ export default function Gift () {
       <div className={styles.body}></div>
       <div className={styles.link1}></div>
       <div className={styles.link2}></div>
-
     </div>
   )
 }

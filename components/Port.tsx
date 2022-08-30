@@ -1,5 +1,6 @@
 import styles from '../styles/Port.module.css'
 import PortModel from '../model/port'
+import Gift from './ Gift';
 
 interface PortProps {
   value: PortModel;
@@ -16,7 +17,7 @@ export default function Port(props: PortProps) {
       onChange(value.handleSelected())
     }}>
       <div className={`${styles.frame} ${select}`}>
-        {open ? false :
+        {!open ?
           <div className={styles.port}>
             <div className={styles.number}>{number}</div>
             <div className={styles.eye}>
@@ -26,9 +27,10 @@ export default function Port(props: PortProps) {
               e.stopPropagation()
               onChange(value.opening())
             }}></div>
-          </div>
+          </div> : haveGift ?
+            <Gift /> : false
         }
-        </div>
+      </div>
       <div className={styles.floor}></div>
     </div>
 

@@ -1,0 +1,29 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.port {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.button button {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
